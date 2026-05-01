@@ -1,0 +1,52 @@
+[
+    null,
+    null,
+    null,
+    null,
+    null,
+    {
+        "id": 5,
+        "list": [
+            {
+                "code": 357,
+                "indent": 0,
+                "parameters": [
+                    "liora_contract",
+                    "checkDialogueTriggers",
+                    "Check Dialogue Triggers",
+                    {
+                        "subjectId": "14",
+                        "tags": "[\"dayStart\"]",
+                        "condition": "true"
+                    }
+                ]
+            },
+            {
+                "code": 657,
+                "indent": 0,
+                "parameters": [
+                    "Subject Id = 14"
+                ]
+            },
+            {
+                "code": 657,
+                "indent": 0,
+                "parameters": [
+                    "Tags = [\"dayStart\"]"
+                ]
+            },
+            {
+                "code": 657,
+                "indent": 0,
+                "parameters": [
+                    "Condition = true"
+                ]
+            },
+            {
+                "code": 0,
+                "indent": 0,
+                "parameters": []
+            }
+        ]
+    }
+]

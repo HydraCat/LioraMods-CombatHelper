@@ -1,0 +1,10 @@
+{
+	"$schema": "../../schemas/auramz/mod-meta.schema.json",
+	"version": "0.5.0",
+	"enabled": true,
+	"files" : {
+	},
+	"plugins": [
+		{"name":"CombatHelper","status":true,"description":"Overlays known bestiary information onto enemies to help in combat","parameters":{}}
+	]
+}
