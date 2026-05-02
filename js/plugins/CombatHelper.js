@@ -217,7 +217,7 @@ CombatHelper = {};
                             const mp = member.mp;
                             const mmp = member.mmp;
                             if (mp !== frame._lastMp || mmp !== frame._lastMmp) {
-                                frame._textLayer.bitmap.clearRect(this._mpX, this._mpY + 20, 120, this.lineHeight());
+                                frame._textLayer.bitmap.clearRect(this._mpX, this._mpY + 20, 120, this.lineHeight() - 5);
                                 if (BeastiaryManager.isKnownStat(member._enemyId, 1)){
                                     this.drawValue(100, member.mp, member.mmp, this._mpX + 5, this._mpY + 20, styles.MP_VALUE, member.index());
                                 }else{
