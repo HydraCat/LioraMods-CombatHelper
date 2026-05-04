@@ -35,7 +35,9 @@ CombatHelper = {};
                     critical = 1 <= action.itemCri(target);
                     let variance = action.item().damage.variance;
                     action.item().damage.variance = 0;
+                    action._evaluate = true;
                     baseDamage = action.makeDamageValue(target, critical);
+                    action._evaluate = false;
                     action.item().damage.variance = variance;
                     return [$.maxVariance(action, baseDamage, variance, false), $.maxVariance(action, baseDamage, variance, true)]
                 }
@@ -313,3 +315,8 @@ CombatHelper = {};
 	}, 50);
 
 })(CombatHelper);
+
+/*Bugs
+- Damage prediction is causing on-hit effects to apply when selecting targets
+
+*/
